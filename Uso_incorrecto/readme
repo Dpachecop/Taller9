@@ -1,0 +1,45 @@
+public class ClaseBase {
+    private String atributoPrivado = "Este es un atributo privado";
+
+   
+    public String getAtributoPrivado() {
+        return atributoPrivado;
+    }
+}
+
+public class ClaseDerivada extends ClaseBase {
+    public void mostrarAtributoPrivado() {
+
+        // Intento acceder al atributo privado usando super
+         System.out.println(super.atributoPrivado); // Error de compilación: no se puede acceder al atributo privado
+
+        // Acceso al atributo privado mediante un método público
+        System.out.println("Accediendo al atributo privado mediante un método: " + getAtributoPrivado());
+    }
+}
+
+
+
+// SE DECLARA UNA CLASE BASE 
+
+
+public class ClaseA {
+    public void metodoA() {
+        System.out.println("Método en Clase A");
+    }
+}
+
+ */
+
+// ahora, no se puede utilizar un super en una clase que no hereda de otra, no tiene sentido
+
+public class ClaseNoDerivada {
+    public void metodoB() {
+        // Intento incorrecto de usar super
+        super.metodoA(); // Error de compilación: no se puede utilizar super en una clase que no hereda de otra clase
+    }
+}
+    
+
+
+

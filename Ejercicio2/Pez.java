@@ -6,6 +6,7 @@ public class Pez extends Animal {
    
     public Pez(String especie, String tipoDeAgua) {
         super(especie); 
+        this.tipoDeAgua = tipoDeAgua;
     }
 
   
